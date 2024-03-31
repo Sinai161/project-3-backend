@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 const {MONGODB_URI} = process.env
 
 mongoose.connect(MONGODB_URI)
@@ -15,5 +15,6 @@ mongoose.connection
     });
 
 module.exports = {
-    User: require("./User")
+    User: require("./User"),
+    FavoriteArtist: require("./FavoriteArtist")
 }
