@@ -11,8 +11,10 @@ router.get("/user", userCtrl.getUser)
 
 // favoriteArtist routes
 
-router.get("/favoriteArtist/:id", favoriteArtistCtrl.getfavoriteArtist)
+router.get("/favoriteArtist", favoriteArtistCtrl.getfavoriteArtist)
 router.post("/favoriteArtist", favoriteArtistCtrl.createFavoriteArtist)
+router.put("/favoriteArtist/:id", favoriteArtistCtrl.updateFavoriteArtist)
+router.delete("/favoriteArtist/:id", favoriteArtistCtrl.deleteFavoriteArtist)
 
 
 
