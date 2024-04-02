@@ -4,7 +4,7 @@ const favoriteArtistSchema = new mongoose.Schema({
     song: String,
     artist: String,
     title: String,
-    releaseDate: Number,
+    releaseDate: String,
     album: String,
     genre: String,
     img: String
