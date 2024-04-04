@@ -1,4 +1,5 @@
 const {default: mongoose} = require("mongoose")
+const User = require("./User")
 
 const favoriteArtistSchema = new mongoose.Schema({
     song: String,
@@ -7,7 +8,8 @@ const favoriteArtistSchema = new mongoose.Schema({
     releaseDate: String,
     album: String,
     genre: String,
-    img: String
+    img: String,
+    User: {type: mongoose.Types.ObjectId, ref: User}
 
 })
 
