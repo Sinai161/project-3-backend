@@ -4,7 +4,6 @@ const User = require("./User")
 const favoriteArtistSchema = new mongoose.Schema({
     song: String,
     artist: String,
-    title: String,
     releaseDate: String,
     album: String,
     genre: String,
