@@ -9,8 +9,7 @@ const favoriteArtistSchema = new mongoose.Schema({
     album: String,
     genre: String,
     img: String,
-    User: {type: mongoose.Types.ObjectId, ref: User}
-
+    User: {type: mongoose.Types.ObjectId, ref: User},
 })
 
 module.exports = mongoose.model("favoriteArtist", favoriteArtistSchema)
